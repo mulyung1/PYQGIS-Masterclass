@@ -1,0 +1,17 @@
+    #coordinates of two pints to calcultate distance
+pointA = QgsPointXY(37.0544742,-1.2320172)
+pointB = QgsPointXY(37.0571929,-1.2322221)
+pointC = QgsPointXY(37.0546850,-1.2327816)
+
+    #Create an instance of the class
+d = QgsDistanceArea()
+    #set to WGS84 ellipsoid for mathematical calculations
+d.setEllipsoid('WGS84')
+
+    #call the measureLine() function on the object
+dist = d.measureLine(pointA, pointB)
+dis = d.measureLine(pointB, pointC)
+c = dist + dis
+print(dist) #303.4218752711494
+print(dis)  #285.8882592965161
+print(c)    #589.3101345676655

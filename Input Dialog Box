@@ -1,0 +1,13 @@
+from PyQt5.QtWidgets import QInputDialog
+
+pop = QInputDialog()
+pop.setModal(False)
+pop.setWindowTitle("Select the side adjacent to a road")
+pop.setIntRange(1,4)
+pop.setIntValue(1)
+pop.show()
+if pop.exec() == QDialog.Accepted:
+    print("Ok was Pressed")
+else:
+    print("Cancel was pressed")
+    

@@ -6,7 +6,9 @@ pop.setWindowTitle("Select the side adjacent to a road")
 pop.setIntRange(1,4)
 pop.setIntValue(1)
 if pop.exec() == QDialog.Accepted:
-    print("Ok was Pressed")
+    val = pop.intValue()
+    print("Selected Value: ", val)
 else:
-    print("Cancel was pressed")
+    print("Dialog closed with no value selected")
+    
     

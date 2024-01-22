@@ -1,2 +1,2 @@
 # PYQGIS-Masterclass
-Python scripts used to achieve different GIS operation in QGIS. 
+QGIS Python scripts used to achieve different GIS operations. 
